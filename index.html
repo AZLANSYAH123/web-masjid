@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+/>
     <link rel="stylesheet" href="css/style.css">
     <title>Mushalla Ar-Rahman</title>
 </head>
@@ -24,29 +28,89 @@
 
         <div class="top-menu">
             <div class="close">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffff" class="w-6 h-6">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffff " class="w-6 h-6">
                     <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
                   </svg>
                   
             </div>
             <ul>
-                <li><a href="#">Beranda</a></li>
+                <li class="active"><a href="#">Beranda</a></li>
                 <li><a href="#">Kegiatan</a></li>
                 <li><a href="#">Gallery</a></li>
-                <li><a href="#">Contac</a></li>
+                <li><a href="#">Contact</a></li>
                 <li><a href="#" class="btn-rounded-full bg-green">Kirirm Infak</a></li>
             </ul>
         </div>
     </nav>
 
     <div class="hero">
-        <img src="img/hiro-1.PNG" alt="hiro">
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <img src="img/hiro-1.PNG" alt="img slide">
+        <div class="text-hiro">
+           <h2>MUSHALLA AR-RAHMAN</h2>
+           <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji
+            Kota Padang</h6>
+        </div>
+
+      </div>
+      <div class="swiper-slide">
+        <img src="img/PEMBANGUNAN.svg" alt="img slide">
+        <div class="text-hiro">
+          <h2>MUSHALLA AR-RAHMAN</h2>
+          <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji
+           Kota Padang</h6>
+       </div>
+      </div>
+      <div class="swiper-slide">
+        <img src="img/WIWRID.jpeg" alt="img slide">
+        <div class="text-hiro">
+          <h2>MUSHALLA AR-RAHMAN</h2>
+          <h6>Ladang Kaladi Rt. 04 Rw. 06 Kel. Sungai Sapih Kec. Kuranji
+           Kota Padang</h6>
+  </div>
+</div>
     </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+   <div class="hiro-hadist">
+<img src="img/quote-leve.svg" alt="quote"class="quote-leve" />
+    <p>
+      Barangsiapa membangun masjid karena Allah,
+       meski seukuran lubang tempat burung qatha bertelur,
+       maka Allah membangun untuknya rumah di surga” (HR Ahmad dan Ibnu Abi Syaibah)
+      </p>
+<img src="img/quote-right.svg" alt="quote"class="quote-right" />
+   </div>
+
+   <!-- Welcome section -->
+   <div class="Welcome-section">
+    <div class="Welcome-section_left">
+      <img src="img/assalamu'alaikum.svg" alt="asalamualaikum">
+      <article>
+        <p>Selamat Datang di website resmi Mushalla Ar-Rahman Ladang Kaladi.</p>
+         <p> Di website ini Bapak/Ibu dapat melihat kegiatan-kegiatan kami dan  juga bisa menyalurkan infak/Sadaqah terbaik Bapak/Ibu.</p>
+      </article>
+      <button class="btn-black">KIRIM INFAK</button>
+
+    </div>
+    <div class="Welcome-section_right">
+      <img src="img/123.png" alt="pengurus">
+    </div>
+   </div>
+
 
     <script
   src="https://code.jquery.com/jquery-3.7.0.min.js"
   integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous">
+</script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
 <script src="js/script.js "></script>
 
 </body>

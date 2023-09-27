@@ -2,82 +2,307 @@
 * {
 margin:0;
 padding:0;
+box-sizing: border-box;
 }
 
 body,
 html{
-    overflow: hidden;
+    overflow-x: hidden;
 }
+
 
 body{
     font-family:'Montserrat', sans-serif;
+    min-height: 100vh;
 }
-.d-none{
-display: none !important; 
-}
-
-.hamburger svg {
-    width: 35px;
+.w-full{
+    width: 100%;
+    height: auto;
 }
 
-.hamburger {
-    cursor: pointer;
+@media (min-width: 320px) {
+    .Welcome-section {
+        width: 80%;
+        margin: 40px auto;
+        background:#0A993C url(../img/pattem.png) no-repeat center;
+        background-size: cover;
+        background-blend-mode: multiply;
+        border-radius: 20px;
+        padding: 40px;
+    }
+    .Welcome-section_left {
+        text-align: center;
+        color: #fff;
+        margin-bottom: 30px;
+    }
+    
+    .Welcome-section_left article {
+        margin: 15px 0;
+    }
+    
+    .btn-black {
+        background-color: #262626;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 5px;
+        font-size: 14px;
+    }
+    
+    .Welcome-section_right img {
+        box-shadow: 0px 3px 8px 1px rgba(0 0 0 / 50%);
+        border-radius: 15px;
+    
+    
+    }
+img{
+    border-radius: 15px;
 }
-.top-menu ul li a {
-    color: beige;
-    text-decoration: none;
-    font-size: 15px;
-    line-height: 26px;}
+    
+    p {
+        margin-bottom: 15px;
+    }
+    
+    p:last-child {
+        margin-bottom: 0;
+    }
+    .hiro-hadist {
+    background-color: #262626;
+    color: #ffff;text-align: center;
+    width: 300px;
+    border-radius: 15px;
+    margin: -75px auto 0;
+    z-index: 9999;
+    position: relative;
+    padding: 28px;
+    box-sizing: border-box;
+    font-size: 12px;
+}
 
-    a.btn-rounded-full {
+.hiro-hadist img {
+    position: absolute;
+    width: 37px;
+    z-index: 99999;
+}
+
+.quote-leve {
+    top: -10px;
+    left: 18px;
+}
+
+.quote-right {bottom: -10px;right: 18px;}
+    .d-none{
+        display: none !important; 
+        }
+        .mySwiper {
+            border-bottom: 0.5em solid #0A993C;
+        }
        
-        padding: 8px 19px;
-        border-radius: 50px;
+        .swiper-slide:before {
+            content: '';
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+            bottom: 0px;
+            background-color: rgba(0,0,0,.5);
+        }
+        .text-hiro {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            z-index: 99;
+            color: #fff;
+            text-align: center;
+            transform: translate(-50%, -50%);
+        }
+        .swiper-slide img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+          .swiper-slide {
+            height: 400px;
+            background-color: gray;
+           
+          }
+        
+        .hamburger svg {
+            width: 35px;
+        }
+        
+        .hamburger {
+            cursor: pointer;
+        }
+        .top-menu ul li a {
+            color: beige;
+            text-decoration: none;
+            font-size: 15px;
+            line-height: 26px;
+            position: relative;
+        }
+        
+        
+            a.btn-rounded-full {
+               
+                padding: 8px 19px;
+                border-radius: 50px;
+            }
+            
+            .top-menu .btn-rounded-full {
+                margin-top: 10px;
+                display: inline-block;
+            }
+        
+            .top-menu ul li.active:before {
+                content: '';
+                position: absolute;
+                bottom: -4px;
+                left: 50%;
+                height: 3px;
+                background-color: #0A993C;
+                width: 30%;
+                transform: translateX(-50%);
+            }
+            
+            .bg-green {
+                background-color: #0A993C;
+            }
+            .top-menu {
+                position: fixed;
+                top: 0;
+                
+                right:-100vw;
+                bottom: 0;
+                background-color: #000;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100vw;
+                transition: .3s;
+            }
+            .top-menu ul li
+            {
+           text-align: center;
+           margin: 10px 0;
+           position:relative;
+           }
+        
+        
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;     
+            z-index: 999;    
+        }
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            z-index: 9999999;
+            cursor: pointer;
+        }
+        
+        .close svg {
+            width: 30px;
+        }
+}
+
+@media (min-width: 768px) {
+    .Welcome-section_left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    .Welcome-section {
+        width: 771px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+       .Welcome-section {
+        padding: 40px;
+    }
+    .hiro-hadist {
+        width: 500px;
+        font-size: 14px;
+        margin: -65px auto 10px;
+    }
+    .swiper-slide {
+        height: 700px;
+        object-fit: cover;
+      }
+    .text-hiro h6 {
+        font-size: 20px;
+        line-height: 24px;
+        width: 600px;
+        margin: 0 auto;
+    }
+    .text-hiro h6 {
+        font-weight: 400;
     }
     
-    .top-menu .btn-rounded-full {
-        margin-top: 10px;
-        display: inline-block;
-    }
+}
+
+@media (min-width: 1024px) {
+   
     
-    .bg-green {
-        background-color: #0A993C;
+    .Welcome-section_left {
+        margin-bottom: 0;
+        margin-right: 40px;
+    }
+    .hiro-hadist img {
+        width: 40px;
+       
+    }
+    .hamburger {
+        display: none;
     }
     .top-menu {
-        position: fixed;
-        top: 0;
-        
-        right:-100vw;
-        bottom: 0;
-        background-color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100vw;
-        transition: .3s;
+        right: 0;
+        position: relative;
+        width: auto;
+        background-color: transparent;
     }
     
-
-
-nav {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    padding: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;     
-    z-index: 999;    
-}
-.close {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    z-index: 9999999;
-    cursor: pointer;
+    .top-menu ul li {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    
+    .top-menu ul li {
+        display: inline-block;
+        margin: 0 0 0 30px;
+    }
+    
+    .close {
+        display: none;
+    }
+    
+    .hamburger {
+        display: none;
+    }
 }
 
-.close svg {
-    width: 30px;
+@media (min-width: 1400px) {
+    .hiro-hadist {
+        font-size: 16px;
+        padding: 60px 40px;
+        width: 600px;
+    }
+    
+   
+    
+    .hiro-hadist img {
+        width: 60px;
+    }
 }
+
+
+
